@@ -9,7 +9,9 @@ app.set('port', process.env.PORT || 3000); //if a port already exists, use it. i
 
 
 //Routes
-
+app.use("/", (req, res) =>{
+    res.send("<h1>Hello World</h1>");
+});
 
 //Server is listening
 app.listen(app.get('port'), () => {
