@@ -65,9 +65,9 @@ function(accessToken, refreshToken, extraParams, profile, done) {
  *  App Configuration
  */
 
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "src/views"));
 app.set("view engine", "pug");
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "src/public")));
  
 app.use(expressSession(session));
  
@@ -83,18 +83,20 @@ passport.deserializeUser((user, done) => {
    done(null, user);
 });
 
+// Creating custom middleware with Express
+app.use((req, res, next) => {
+    res.locals.isAuthenticated = req.isAuthenticated();
+    next();
+  });
+
 // Router mounting
 app.use("/", authRouter);
 
-//Middlewares
 
 
 
 //Routes
 // using this we can put the rest of the code inside the folder "routes"
-app.get("/", (req, res) =>{
-    res.send("<h1>Hello World</h1>");
-});
 //app.use(require('./routes/index'));
 //app.use(require('./routes/meteors'));
 //app.use(require('./routes/users'));
