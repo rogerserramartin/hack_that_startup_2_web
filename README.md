@@ -11,14 +11,15 @@ create the meteor and user models
 
 <li>Find all & addlist</li>
 install express using npm i express\
-create the database.js file for mongodb connection
-create the server.js file
-install nodemon
-install REST client from extensions
-install postman
+create the database.js file for mongodb connection\
+create the server.js file\
+install nodemon\
+install REST client from extensions\
+install postman\
 
 <li>CRUD</li>
-https://auth0.com/
+I've just followed this: 
+https://auth0.com/blog/create-a-simple-and-secure-node-express-app/
 
 <li>AUTH</li>
 <li>Testing</li>
