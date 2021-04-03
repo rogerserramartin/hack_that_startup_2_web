@@ -14,6 +14,8 @@ install express using npm i express\
 create the database.js file for mongodb connection
 create the server.js file
 install nodemon
+install REST client from extensions
+install postman
 
 <li>CRUD</li>
 <li>AUTH</li>
