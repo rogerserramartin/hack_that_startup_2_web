@@ -1,0 +1,20 @@
+{
+  "name": "hack_that_startup_2_web",
+  "version": "1.0.0",
+  "description": "REST API using nodejs and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogersm92/hack_that_startup_2_web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogersm92/hack_that_startup_2_web/issues"
+  },
+  "homepage": "https://github.com/rogersm92/hack_that_startup_2_web#readme"
+}
