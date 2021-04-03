@@ -1,7 +1,7 @@
 'use strict';
 
 const mongoose = require('mongoose'),
-User = mongoose.model('Users'); //collection Meteors
+User = mongoose.model('Users'); //collection Users
 
 exports.findAll = function(req, res) {
   User.find({}, function(err, task) {
